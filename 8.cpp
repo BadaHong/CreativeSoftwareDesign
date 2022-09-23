@@ -1,3 +1,4 @@
+//This program will print out the magic square of the odd number. This code shows how to create and use dynamically allocated memory and 2D array using it. This also shows how to pass array using reference to a function.
 #include <iostream>
 
 using namespace std;
