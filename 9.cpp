@@ -7,12 +7,16 @@ using namespace std;
 void magicSquare(int**& arr, int N){
         int a1[N][N], a2[N][N];
         int num1 = 1, num2 = N*N;
-        for(int i = 0; i < N; i++){
+	
+	//adding magic square integers to each arrray        
+	for(int i = 0; i < N; i++){
                 for(int j = 0; j < N; j++){
                         a1[i][j] = num1++;
                         a2[i][j] = num2--;
                 }
         }
+
+	//adjusting the original magic square with corresponding integers using a1 and a2
         int r1 = N/4, r2 = N/2;
         for(int row = 0; row < N; row++){
                 if((row >= 0 && row < r1) || (row >= r1+r2 && row < N)){
@@ -55,6 +59,8 @@ int main(){
                 }
                 cout << endl;
         }
+	
+	//deleting dynamically allocated memory for each colum and row
         for(int i = 0; i < N; i++){
                 delete[] arr[i];
         }
