@@ -1,3 +1,5 @@
+//this program will examine the minimum and maximum numbers from a list of numbers from command-line argument. it will include how to create dynamically allocated memory and use function by passing values as reference to parameter.
+
 #include <iostream>
 #include "minmax.h"
 
